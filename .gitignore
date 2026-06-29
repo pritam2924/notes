@@ -1,0 +1,3 @@
+# Large archives — keep out of git (GitHub rejects files >100 MB)
+*.zip
+"PROJECT EQUIPTRACK.zip"
