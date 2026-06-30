@@ -1,0 +1,460 @@
+/* Restored original Contact Messages styles */
+.contact-messages-container {
+  padding: 20px;
+  height: calc(100vh - 100px);
+}
+
+.messages-header {
+  display: flex;
+  justify-content: center; /* center the heading horizontally */
+  align-items: center;
+  flex-direction: column; /* keep heading above any small helper elements */
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.messages-header h2 {
+  margin: 0;
+  color: var(--primary-color);
+  text-align: center; /* ensure text is centered */
+}
+
+.badge {
+  background: #ff4444;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.messages-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+  height: calc(100% - 60px);
+}
+
+.messages-list {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.message-item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.message-item:hover {
+  background: #f5f5f5;
+}
+
+.message-item.active {
+  background: #e3f2fd;
+  border-left: 3px solid var(--primary-color);
+}
+
+.message-item.unread {
+  background: #fff9e6;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.new-badge {
+  background: #4CAF50;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+}
+
+.message-preview {
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+}
+
+.message-detail {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ensure the detail area can position the single close button */
+.message-detail {
+  position: relative;
+.modern .messages-content.modern-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  height: calc(100% - 40px);
+}
+
+.modern-list {
+  padding: 12px;
+}
+
+.modern-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(17,24,39,0.04);
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+.modern-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(17,24,39,0.06);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6EE7B7, #3B82F6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-initials {
+  user-select: none;
+}
+
+.unread-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ef4444;
+  bottom: -2px;
+  right: -2px;
+  border: 2px solid white;
+}
+
+.message-body {
+  flex: 1 1 auto;
+}
+
+.message-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.message-sender {
+  display: inline-block;
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modern-preview {
+  margin: 6px 0 0 0;
+  color: #475569;
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.modern-detail {
+  position: relative;
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff, #fafafa);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+}
+
+.message-detail-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #374151;
+  padding: 6px;
+  border-radius: 8px;
+  z-index: 8;
+}
+
+.message-detail-close:hover {
+  background: rgba(15,23,42,0.04);
+  color: #111827;
+}
+
+.modern-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  /* reserve space on the right so the absolute close button doesn't overlap action buttons */
+  padding-right: 60px;
+}
+
+.detail-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.detail-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #60A5FA, #34D399);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+}
+
+.detail-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.detail-meta {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.detail-actions .replied-badge { 
+  background: #10B981;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.mark-read-btn.btn {
+  background: transparent;
+  border: 1px solid rgba(15,23,42,0.06);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.modern-detail-content .message-text {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.reply-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e6edf3;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.reply-actions { display:flex; justify-content:flex-end; }
+
+.btn-send-reply.primary {
+  /* match Inventory 'Add Spare Part' button (.btn-info) */
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-send-reply.primary:hover {
+  background-color: #138496;
+}
+
+.modern-no-selection { display:flex; align-items:center; justify-content:center; height:100%; color:#6b7280 }
+
+@media (max-width: 900px) {
+  .modern .messages-content.modern-grid {
+    grid-template-columns: 1fr;
+  }
+}
+}
+
+.message-detail-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.message-detail-close:hover {
+  background: rgba(0,0,0,0.04);
+  color: #222;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+}
+
+.detail-header h3 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.btn-close {
+
+  cursor: pointer;
+  color: #999;
+}
+
+.btn-close:hover {
+  color: #333;
+}
+
+.detail-field {
+  margin-bottom: 20px;
+}
+
+.detail-field label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.detail-field p {
+  margin: 0;
+  color: #333;
+}
+
+.message-text {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.replied-info {
+  margin: 15px 0;
+}
+
+.replied-badge {
+  background: #4CAF50;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.reply-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+.reply-section label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.reply-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.reply-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.btn-send-reply {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  float: right;
+}
+
+.btn-send-reply:hover {
+  background-color: #138496;
+}
+
+.btn-send-reply:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.no-messages, .no-selection {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .messages-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .messages-list {
+    max-height: 300px;
+  }
+}
+
+  .contact-messages-container {
+    padding: 16px;
+  }
+

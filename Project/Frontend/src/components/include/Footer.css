@@ -1,0 +1,78 @@
+/* Footer styles - responsive and accessible */
+
+.app-footer {
+  font-size: 14px;
+  line-height: 1.5;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-brand .brand-icon {
+    font-size: 1.8rem;
+    animation: rotate 3s linear infinite;
+  }
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 0.75rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  transition: background .15s ease, transform .12s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffc107; /* matches btn-warning */
+  text-decoration: underline;
+}
+
+.footer-divider {
+  border-color: rgba(255,255,255,0.06);
+  margin: 1.25rem 0;
+}
+
+/* Newsletter input smaller on mobile */
+.newsletter-form .form-control {
+  min-width: 0;
+}
+
+/* Accessibility helpers */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Responsive tweaks */
+@media (max-width: 575.98px) {
+  .social-link { width: 34px; height: 34px; }
+  .app-footer { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+}

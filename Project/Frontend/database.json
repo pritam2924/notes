@@ -1,0 +1,1242 @@
+{
+  "equipment": [
+    {
+      "equipmentId": "EQ-MECH-2025-1001",
+      "equipmentDetails": {
+        "equipmentName": "Centrifugal Pump",
+        "category": "Mechanical",
+        "installationDate": "2025-03-15",
+        "equipmentStatus": "Operational",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-03-15"
+          },
+          {
+            "status": "Under Maintenance",
+            "date": "2025-12-11T08:42:28.090Z"
+          },
+          {
+            "status": "Operational",
+            "date": "2025-12-11T09:23:38.170Z"
+          },
+          {
+            "status": "Under Maintenance",
+            "date": "2025-12-11T10:17:14.971Z"
+          },
+          {
+            "status": "Operational",
+            "date": "2025-12-26T03:50:52.219Z"
+          },
+          {
+            "status": "Under Maintenance",
+            "date": "2025-12-27T06:12:52.557Z"
+          },
+          {
+            "status": "Operational",
+            "date": "2026-01-07T14:44:32.584Z"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "CP-500",
+        "weightKg": 250,
+        "powerKW": 15,
+        "capacity": "500 liters per minute"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_cp500.pdf",
+        "installationManual": "install_manual_cp500.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0002",
+        "vendorName": "Office Essentials Ltd.",
+        "contactEmail": "info@officeessentials.com"
+      },
+      "id": "e6f9",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-24T00:30:00.000Z",
+          "category": "Mechanical",
+          "metrics": {
+            "temperature": 80,
+            "load": 96,
+            "vibration": 7.4
+          },
+          "notes": "Check1"
+        },
+        {
+          "timestamp": "2025-12-24T01:00:00.000Z",
+          "category": "Mechanical",
+          "metrics": {
+            "temperature": 100,
+            "load": 98,
+            "vibration": 1.2
+          }
+        },
+        {
+          "timestamp": "2025-12-24T01:07:00.000Z",
+          "category": "Mechanical",
+          "metrics": {
+            "temperature": 90,
+            "load": 89,
+            "vibration": 1.2
+          }
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-ELEC-2025-1002",
+      "equipmentDetails": {
+        "equipmentName": "Diesel Generator",
+        "category": "Electrical",
+        "installationDate": "2025-02-10",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-02-10"
+          },
+          {
+            "status": "Operational",
+            "date": "2025-12-11T09:21:24.804Z"
+          }
+        ],
+        "equipmentStatus": "Operational"
+      },
+      "specifications": {
+        "model": "DG-750",
+        "weightKg": 1200,
+        "powerKW": 500,
+        "capacity": "500 kVA"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_dg750.pdf",
+        "installationManual": "install_manual_dg750.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0001",
+        "vendorName": "Tech Supplies Co.",
+        "contactEmail": "contact@techsupplies.com"
+      },
+      "id": "43f8",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-24T00:30:00.000Z",
+          "category": "Electrical",
+          "metrics": {
+            "temperature": 100,
+            "load": 100
+          },
+          "notes": "Should check with temperature sensor and bolts"
+        },
+        {
+          "timestamp": "2025-12-24T00:41:00.000Z",
+          "category": "Electrical",
+          "metrics": {
+            "temperature": 100,
+            "load": 98
+          }
+        },
+        {
+          "timestamp": "2025-12-29T13:37:00.000Z",
+          "category": "Electrical",
+          "metrics": {
+            "temperature": 90,
+            "load": 30
+          }
+        },
+        {
+          "timestamp": "2025-12-29T20:12:00.000Z",
+          "category": "Electrical",
+          "metrics": {
+            "temperature": 200,
+            "load": 109
+          }
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-INST-2025-1003",
+      "equipmentDetails": {
+        "equipmentName": "Pressure Transmitter",
+        "category": "Instrumentation",
+        "installationDate": "2025-01-20",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-01-20"
+          },
+          {
+            "status": "Under Maintenance",
+            "date": "2025-12-11T09:21:12.524Z"
+          },
+          {
+            "status": "Operational",
+            "date": "2025-12-27T05:59:29.298Z"
+          },
+          {
+            "status": "Under Maintenance",
+            "date": "2026-01-07T14:47:44.452Z"
+          }
+        ],
+        "equipmentStatus": "Under Maintenance"
+      },
+      "specifications": {
+        "model": "PT-300",
+        "weightKg": 5,
+        "powerKW": 0.5,
+        "capacity": "0-10 bar"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_pt300.pdf",
+        "installationManual": "install_manual_pt300.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0005",
+        "vendorName": "Industrial Equipment Inc.",
+        "contactEmail": "hello@industrialequip.com"
+      },
+      "id": "b5cf",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-29T20:10:00.000Z",
+          "category": "Instrumentation",
+          "metrics": {
+            "temperature": 89
+          }
+        },
+        {
+          "timestamp": "2025-12-29T20:35:00.000Z",
+          "category": "Instrumentation",
+          "metrics": {
+            "temperature": 199.9
+          }
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-AUTO-2025-1004",
+      "equipmentDetails": {
+        "equipmentName": "Robotic Arm",
+        "category": "Automation",
+        "installationDate": "2025-04-05",
+        "equipmentStatus": "Installed",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-04-05"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "RA-200",
+        "weightKg": 150,
+        "powerKW": 10,
+        "capacity": "200 units/hour"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_ra200.pdf",
+        "installationManual": "install_manual_ra200.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0004",
+        "vendorName": "Stationery Hub",
+        "contactEmail": "support@stationeryhub.com"
+      },
+      "id": "ff8b",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-28T22:47:00.000Z",
+          "category": "Automation",
+          "metrics": {
+            "temperature": 100,
+            "load": 80
+          },
+          "notes": "Check1"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-HTCL-2025-1005",
+      "equipmentDetails": {
+        "equipmentName": "Industrial Boiler",
+        "category": "Heating & Cooling",
+        "installationDate": "2025-03-25",
+        "equipmentStatus": "Decommissioned",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-03-25"
+          },
+          {
+            "status": "Operational",
+            "date": "2025-12-11T09:41:53.275Z"
+          },
+          {
+            "status": "Decommissioned",
+            "date": "2026-01-07T14:47:35.551Z"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "IB-100",
+        "weightKg": 3000,
+        "powerKW": 50,
+        "capacity": "10 tons per hour"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_ib100.pdf",
+        "installationManual": "install_manual_ib100.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0004",
+        "vendorName": "Stationery Hub",
+        "contactEmail": "support@stationeryhub.com"
+      },
+      "id": "214a",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-28T09:54:00.000Z",
+          "category": "Heating & Cooling",
+          "metrics": {
+            "temperature": 100,
+            "load": 61
+          }
+        },
+        {
+          "timestamp": "2025-12-29T13:41:00.000Z",
+          "category": "Heating & Cooling",
+          "metrics": {
+            "temperature": 100,
+            "load": 79
+          },
+          "notes": "Check2"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-SAFE-2025-1006",
+      "equipmentDetails": {
+        "equipmentName": "Fire Suppression System",
+        "category": "Safety & Utilization",
+        "installationDate": "2025-02-28",
+        "equipmentStatus": "Operational",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-02-28"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "FSS-50",
+        "weightKg": 80,
+        "powerKW": 2,
+        "capacity": "Coverage: 50 m²"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_fss50.pdf",
+        "installationManual": "install_manual_fss50.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0003",
+        "vendorName": "Gadget World",
+        "contactEmail": "sales@gadgetworld.com"
+      },
+      "id": "cc70",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-25T22:12:00.000Z",
+          "category": "Safety & Utilization",
+          "metrics": {
+            "temperature": 120
+          }
+        },
+        {
+          "timestamp": "2025-12-29T21:18:00.000Z",
+          "category": "Safety & Utilization",
+          "metrics": {
+            "temperature": 99
+          }
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-MECH-2025-1007",
+      "equipmentDetails": {
+        "equipmentName": "Conveyor Belt",
+        "category": "Mechanical",
+        "installationDate": "2025-05-01",
+        "equipmentStatus": "Operational",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-05-01"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "CB-300",
+        "weightKg": 500,
+        "powerKW": 5,
+        "capacity": "100 kg per meter"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_cb300.pdf",
+        "installationManual": "install_manual_cb300.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0002",
+        "vendorName": "Office Essentials Ltd.",
+        "contactEmail": "info@officeessentials.com"
+      },
+      "id": "e948",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-29T20:35:00.000Z",
+          "category": "Mechanical",
+          "metrics": {
+            "temperature": 100,
+            "load": 99,
+            "vibration": 49.99
+          }
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-ELEC-2025-1008",
+      "equipmentDetails": {
+        "equipmentName": "Air Compressor",
+        "category": "Electrical",
+        "installationDate": "2025-06-10",
+        "equipmentStatus": "Installed",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-06-10"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "AC-150",
+        "weightKg": 350,
+        "powerKW": 20,
+        "capacity": "200 cubic feet per minute"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_ac150.pdf",
+        "installationManual": "install_manual_ac150.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0009",
+        "vendorName": "Hardware Direct",
+        "contactEmail": "sales@hardwaredirect.com"
+      },
+      "id": "70a0",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-28T21:34:00.000Z",
+          "category": "Electrical",
+          "metrics": {
+            "temperature": 100,
+            "load": 51
+          },
+          "notes": "Check1"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-INST-2025-1009",
+      "equipmentDetails": {
+        "equipmentName": "Temperature Sensor",
+        "category": "Instrumentation",
+        "installationDate": "2025-07-15",
+        "equipmentStatus": "Operational",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-07-15"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "TS-80",
+        "weightKg": 2,
+        "powerKW": 0.2,
+        "capacity": "Range: -50°C to 150°C"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_ts80.pdf",
+        "installationManual": "install_manual_ts80.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0002",
+        "vendorName": "Office Essentials Ltd.",
+        "contactEmail": "info@officeessentials.com"
+      },
+      "id": "f5d8",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-28T22:48:00.000Z",
+          "category": "Instrumentation",
+          "metrics": {
+            "temperature": 90.9
+          }
+        },
+        {
+          "timestamp": "2025-12-29T20:40:00.000Z",
+          "category": "Instrumentation",
+          "metrics": {
+            "temperature": 98.9
+          }
+        },
+        {
+          "timestamp": "2026-01-06T09:41:00.000Z",
+          "category": "Instrumentation",
+          "metrics": {
+            "temperature": 87
+          },
+          "notes": "Check2"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-AUTO-2025-1010",
+      "equipmentDetails": {
+        "equipmentName": "Automated Packaging Machine",
+        "category": "Automation",
+        "installationDate": "2025-08-20",
+        "equipmentStatus": "Operational",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-08-20"
+          },
+          {
+            "status": "Under Maintenance",
+            "date": "2025-12-27T06:08:10.774Z"
+          },
+          {
+            "status": "Operational",
+            "date": "2025-12-27T06:08:47.308Z"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "APM-400",
+        "weightKg": 600,
+        "powerKW": 25,
+        "capacity": "400 packs/hour"
+      },
+      "documents": {
+        "paymentReceipt": "payment_receipt_apm400.pdf",
+        "installationManual": "install_manual_apm400.pdf"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0010",
+        "vendorName": "Elite Manufacturing Supply",
+        "contactEmail": "support@elitemfgsupply.com"
+      },
+      "id": "43aa",
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-29T21:13:00.000Z",
+          "category": "Automation",
+          "metrics": {
+            "temperature": 200,
+            "load": 98
+          }
+        }
+      ]
+    },
+    {
+      "id": "45b8",
+      "equipmentId": "EQ-AUTO-2025-1011",
+      "equipmentDetails": {
+        "equipmentName": "Laptop",
+        "category": "Automation",
+        "installationDate": "2025-12-02",
+        "equipmentStatus": "Operational",
+        "LifeCycleHistory": [
+          {
+            "status": "Installed",
+            "date": "2025-12-02"
+          }
+        ]
+      },
+      "specifications": {
+        "model": "Laptop DELL",
+        "weightKg": -3,
+        "powerKW": 20,
+        "capacity": "300"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0005",
+        "vendorName": "Industrial Equipment Inc.",
+        "contactEmail": "hello@industrialequip.com"
+      },
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-29T21:33:00.000Z",
+          "category": "Automation",
+          "metrics": {
+            "temperature": 90,
+            "load": 103
+          }
+        }
+      ]
+    },
+    {
+      "id": "6d02",
+      "equipmentId": "EQ-INST-2025-1010",
+      "equipmentDetails": {
+        "equipmentName": "weighing machine",
+        "category": "Instrumentation",
+        "installationDate": "2025-12-26",
+        "equipmentStatus": "Installed"
+      },
+      "specifications": {
+        "model": "WH-005",
+        "weightKg": 200,
+        "powerKW": 10,
+        "capacity": "8"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0010",
+        "vendorName": "Elite Manufacturing Supply",
+        "contactEmail": "support@elitemfgsupply.com"
+      },
+      "performanceMetrics": [
+        {
+          "timestamp": "2025-12-29T20:13:00.000Z",
+          "category": "Instrumentation",
+          "metrics": {
+            "temperature": 100
+          }
+        }
+      ]
+    },
+    {
+      "id": "482f",
+      "equipmentId": "EQ-ELEC-2026-1001",
+      "equipmentDetails": {
+        "equipmentName": "sbgchnf",
+        "category": "Electrical",
+        "installationDate": "2026-01-02",
+        "equipmentStatus": "Installed"
+      },
+      "specifications": {
+        "model": "hegbco",
+        "weightKg": 980,
+        "powerKW": 3438,
+        "capacity": "3874"
+      },
+      "vendorDetails": {
+        "vendorId": "VND-0011",
+        "vendorName": "XYZ Vendors",
+        "contactEmail": "xyz@gmail.com"
+      }
+    }
+  ],
+  "maintenanceTasks": [
+    {
+      "id": "dc9a",
+      "equipmentId": "EQ-MECH-2025-1001",
+      "equipmentName": "Centrifugal Pump",
+      "title": "ert",
+      "description": "ertyh",
+      "scheduledDate": "2025-12-25",
+      "priority": "Medium",
+      "status": "Cancelled",
+      "createdAt": "2025-12-24T04:32:58.896Z"
+    },
+    {
+      "id": "6d6f",
+      "equipmentId": "EQ-ELEC-2025-1002",
+      "equipmentName": "Diesel Generator",
+      "title": "oil change",
+      "description": "hey ",
+      "scheduledDate": "2025-12-25",
+      "priority": "High",
+      "status": "Completed",
+      "createdAt": "2025-12-24T05:09:49.397Z",
+      "updatedAt": "2025-12-24T05:11:12.843Z"
+    },
+    {
+      "id": "f68e",
+      "equipmentId": "EQ-MECH-2025-1001",
+      "equipmentName": "Centrifugal Pump",
+      "title": "1111111",
+      "description": "11111111",
+      "scheduledDate": "2025-12-06",
+      "priority": "High",
+      "status": "Completed",
+      "createdAt": "2025-12-25T14:38:43.409Z",
+      "updatedAt": "2025-12-29T15:10:32.764Z",
+      "completedAt": "2025-12-29T15:10:32.764Z"
+    },
+    {
+      "id": "776e",
+      "equipmentId": "EQ-INST-2025-1009",
+      "equipmentName": "Temperature Sensor",
+      "title": "Replace sensor",
+      "description": "Check1",
+      "scheduledDate": "2025-12-31",
+      "priority": "Critical",
+      "status": "Completed",
+      "createdAt": "2025-12-29T04:28:02.198Z",
+      "updatedAt": "2026-01-08T03:14:02.166Z",
+      "completedAt": "2026-01-08T03:14:02.166Z"
+    },
+    {
+      "id": "b704",
+      "equipmentId": "EQ-SAFE-2025-1006",
+      "equipmentName": "Fire Suppression System",
+      "title": "Check1",
+      "description": "",
+      "scheduledDate": "2025-12-31",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2025-12-29T15:09:47.149Z",
+      "updatedAt": "2026-01-08T03:14:03.232Z",
+      "startedAt": "2026-01-08T03:14:03.232Z"
+    }
+  ],
+  "vendors": [
+    {
+      "vendorId": "VND-0001",
+      "vendorName": "Tech Supplies Co.",
+      "contactEmail": "contact@techsupplies.com",
+      "id": "624a"
+    },
+    {
+      "vendorId": "VND-0002",
+      "vendorName": "Office Essentials Ltd.",
+      "contactEmail": "info@officeessentials.com",
+      "id": "d0ac"
+    },
+    {
+      "vendorId": "VND-0003",
+      "vendorName": "Gadget World",
+      "contactEmail": "sales@gadgetworld.com",
+      "id": "876a"
+    },
+    {
+      "vendorId": "VND-0004",
+      "vendorName": "Stationery Hub",
+      "contactEmail": "support@stationeryhub.com",
+      "id": "c9cf"
+    },
+    {
+      "vendorId": "VND-0005",
+      "vendorName": "Industrial Equipment Inc.",
+      "contactEmail": "hello@industrialequip.com",
+      "id": "815a"
+    },
+    {
+      "vendorId": "VND-0006",
+      "vendorName": "Premium Tools Ltd.",
+      "contactEmail": "service@premiumtools.com",
+      "id": "abc7"
+    },
+    {
+      "vendorId": "VND-0007",
+      "vendorName": "Global Supplies Co.",
+      "contactEmail": "contact@globalsupplies.com",
+      "id": "d80c"
+    },
+    {
+      "vendorId": "VND-0008",
+      "vendorName": "Machinery Solutions",
+      "contactEmail": "info@machinerysolutions.com",
+      "id": "1169"
+    },
+    {
+      "vendorId": "VND-0009",
+      "vendorName": "Hardware Direct",
+      "contactEmail": "sales@hardwaredirect.com",
+      "id": "88d5"
+    },
+    {
+      "vendorId": "VND-0010",
+      "vendorName": "Elite Manufacturing Supply",
+      "contactEmail": "support@elitemfgsupply.com",
+      "id": "39ba"
+    },
+    {
+      "id": "89ee",
+      "vendorId": "VND-0011",
+      "vendorName": "XYZ Vendors",
+      "contactEmail": "xyz@gmail.com"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "EQ-1001-AL-001",
+      "equipmentId": "EQ-MECH-2025-1001",
+      "recordId": "e6f9",
+      "equipmentName": "Centrifugal Pump",
+      "category": "Mechanical",
+      "timestamp": "2025-12-24T01:07:00.000Z",
+      "severity": "warning",
+      "status": "acknowledged",
+      "metrics": {
+        "temperature": 90,
+        "load": 89,
+        "vibration": 1.2
+      },
+      "levels": {
+        "temperature": "warning",
+        "load": "normal",
+        "vibration": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1002-AL-001",
+      "equipmentId": "EQ-ELEC-2025-1002",
+      "recordId": "43f8",
+      "equipmentName": "Diesel Generator",
+      "category": "Electrical",
+      "timestamp": "2025-12-29T20:12:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 200,
+        "load": 109,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1003-AL-001",
+      "equipmentId": "EQ-INST-2025-1003",
+      "recordId": "b5cf",
+      "equipmentName": "Pressure Transmitter",
+      "category": "Instrumentation",
+      "timestamp": "2025-12-29T20:35:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 199.9,
+        "load": null,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1004-AL-001",
+      "equipmentId": "EQ-AUTO-2025-1004",
+      "recordId": "ff8b",
+      "equipmentName": "Robotic Arm",
+      "category": "Automation",
+      "timestamp": "2025-12-28T22:47:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 80,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1005-AL-001",
+      "equipmentId": "EQ-HTCL-2025-1005",
+      "recordId": "214a",
+      "equipmentName": "Industrial Boiler",
+      "category": "Heating & Cooling",
+      "timestamp": "2025-12-29T13:41:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 79,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1006-AL-001",
+      "equipmentId": "EQ-SAFE-2025-1006",
+      "recordId": "cc70",
+      "equipmentName": "Fire Suppression System",
+      "category": "Safety & Utilization",
+      "timestamp": "2025-12-29T21:18:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 99,
+        "load": null,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1007-AL-001",
+      "equipmentId": "EQ-MECH-2025-1007",
+      "recordId": "e948",
+      "equipmentName": "Conveyor Belt",
+      "category": "Mechanical",
+      "timestamp": "2025-12-29T20:35:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 99,
+        "vibration": 49.99
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "warning",
+        "vibration": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1008-AL-001",
+      "equipmentId": "EQ-ELEC-2025-1008",
+      "recordId": "70a0",
+      "equipmentName": "Air Compressor",
+      "category": "Electrical",
+      "timestamp": "2025-12-28T21:34:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 51,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1009-AL-001",
+      "equipmentId": "EQ-INST-2025-1009",
+      "recordId": "f5d8",
+      "equipmentName": "Temperature Sensor",
+      "category": "Instrumentation",
+      "timestamp": "2025-12-29T20:40:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 98.9,
+        "load": null,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-1010-AL-001",
+      "equipmentId": "EQ-AUTO-2025-1010",
+      "recordId": "43aa",
+      "equipmentName": "Automated Packaging Machine",
+      "category": "Automation",
+      "timestamp": "2025-12-29T21:13:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 200,
+        "load": 98,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "warning"
+      }
+    },
+    {
+      "id": "EQ-1011-AL-001",
+      "equipmentId": "EQ-AUTO-2025-1011",
+      "recordId": "45b8",
+      "equipmentName": "Laptop",
+      "category": "Automation",
+      "timestamp": "2025-12-29T21:33:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 90,
+        "load": 103,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "warning",
+        "load": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-MECH-2025-1001-2025-12-24T01:07:00.000Z",
+      "equipmentId": "EQ-MECH-2025-1001",
+      "recordId": "e6f9",
+      "equipmentName": "Centrifugal Pump",
+      "category": "Mechanical",
+      "timestamp": "2025-12-24T01:07:00.000Z",
+      "severity": "warning",
+      "status": "open",
+      "metrics": {
+        "temperature": 90,
+        "load": 89,
+        "vibration": 1.2
+      },
+      "levels": {
+        "temperature": "warning",
+        "load": "normal",
+        "vibration": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-ELEC-2025-1002-2025-12-29T20:12:00.000Z",
+      "equipmentId": "EQ-ELEC-2025-1002",
+      "recordId": "43f8",
+      "equipmentName": "Diesel Generator",
+      "category": "Electrical",
+      "timestamp": "2025-12-29T20:12:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 200,
+        "load": 109,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-INST-2025-1003-2025-12-29T20:35:00.000Z",
+      "equipmentId": "EQ-INST-2025-1003",
+      "recordId": "b5cf",
+      "equipmentName": "Pressure Transmitter",
+      "category": "Instrumentation",
+      "timestamp": "2025-12-29T20:35:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 199.9,
+        "load": null,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-AUTO-2025-1004-2025-12-28T22:47:00.000Z",
+      "equipmentId": "EQ-AUTO-2025-1004",
+      "recordId": "ff8b",
+      "equipmentName": "Robotic Arm",
+      "category": "Automation",
+      "timestamp": "2025-12-28T22:47:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 80,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-HTCL-2025-1005-2025-12-29T13:41:00.000Z",
+      "equipmentId": "EQ-HTCL-2025-1005",
+      "recordId": "214a",
+      "equipmentName": "Industrial Boiler",
+      "category": "Heating & Cooling",
+      "timestamp": "2025-12-29T13:41:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 79,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-SAFE-2025-1006-2025-12-29T21:18:00.000Z",
+      "equipmentId": "EQ-SAFE-2025-1006",
+      "recordId": "cc70",
+      "equipmentName": "Fire Suppression System",
+      "category": "Safety & Utilization",
+      "timestamp": "2025-12-29T21:18:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 99,
+        "load": null,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-MECH-2025-1007-2025-12-29T20:35:00.000Z",
+      "equipmentId": "EQ-MECH-2025-1007",
+      "recordId": "e948",
+      "equipmentName": "Conveyor Belt",
+      "category": "Mechanical",
+      "timestamp": "2025-12-29T20:35:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 99,
+        "vibration": 49.99
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "warning",
+        "vibration": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-ELEC-2025-1008-2025-12-28T21:34:00.000Z",
+      "equipmentId": "EQ-ELEC-2025-1008",
+      "recordId": "70a0",
+      "equipmentName": "Air Compressor",
+      "category": "Electrical",
+      "timestamp": "2025-12-28T21:34:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": 51,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "normal"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-INST-2025-1009-2026-01-06T09:41:00.000Z",
+      "equipmentId": "EQ-INST-2025-1009",
+      "recordId": "f5d8",
+      "equipmentName": "Temperature Sensor",
+      "category": "Instrumentation",
+      "timestamp": "2026-01-06T09:41:00.000Z",
+      "severity": "warning",
+      "status": "open",
+      "metrics": {
+        "temperature": 87,
+        "load": null,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "warning"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-AUTO-2025-1010-2025-12-29T21:13:00.000Z",
+      "equipmentId": "EQ-AUTO-2025-1010",
+      "recordId": "43aa",
+      "equipmentName": "Automated Packaging Machine",
+      "category": "Automation",
+      "timestamp": "2025-12-29T21:13:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 200,
+        "load": 98,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical",
+        "load": "warning"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-AUTO-2025-1011-2025-12-29T21:33:00.000Z",
+      "equipmentId": "EQ-AUTO-2025-1011",
+      "recordId": "45b8",
+      "equipmentName": "Laptop",
+      "category": "Automation",
+      "timestamp": "2025-12-29T21:33:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 90,
+        "load": 103,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "warning",
+        "load": "critical"
+      },
+      "notes": null
+    },
+    {
+      "id": "EQ-INST-2025-1010-2025-12-29T20:13:00.000Z",
+      "equipmentId": "EQ-INST-2025-1010",
+      "recordId": "6d02",
+      "equipmentName": "weighing machine",
+      "category": "Instrumentation",
+      "timestamp": "2025-12-29T20:13:00.000Z",
+      "severity": "critical",
+      "status": "open",
+      "metrics": {
+        "temperature": 100,
+        "load": null,
+        "vibration": null
+      },
+      "levels": {
+        "temperature": "critical"
+      },
+      "notes": null
+    }
+  ],
+  "pendingOperators": [
+    {
+      "id": "23f8",
+      "firstName": "shubham",
+      "lastName": "patel",
+      "email": "shubham123@gmail.com",
+      "phoneNumber": "7897665788",
+      "registrationDate": "2026-01-16T04:09:12.320Z",
+      "status": "pending"
+    }
+  ]
+}

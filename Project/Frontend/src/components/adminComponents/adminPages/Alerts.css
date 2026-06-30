@@ -1,0 +1,23 @@
+.alerts-table thead,
+.alerts-table thead tr,
+.alerts-table thead th {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  /* remove any background images or gradients that might be applied elsewhere */
+  background-image: none !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+
+/* Ensure th text and icons are visible */
+.alerts-table thead th {
+  border-color: transparent !important;
+}
+
+.badge-fixed {
+  min-width: 70px;
+  padding: 0.375em 0.75em;
+  font-size: 0.75em;
+  display: inline-block;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+export { default as Dashboard } from "./Dashboard";
+export { default as Equipment } from "./Equipment";
+export { default as Maintenance } from "./Maintenance";
+export { default as Reports } from "./Reports";
+export { default as Calendar } from "./Calendar";
+export { default as Performance } from "./Performance";
+export { default as Alerts } from "./Alerts";
+export { default as AdminProfile } from "./AdminProfile";
+export { default as AdminResetPassword } from "./AdminResetPassword";
+export { default as SpareParts } from "./SpareParts";
+export { default as ContactMessages } from "./ContactMessages";
+export { default as OperatorAdministration } from "./OperatorAdministration";

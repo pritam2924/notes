@@ -1,0 +1,67 @@
+.vendor-page {
+  animation: fadeIn 0.5s ease;
+}
+
+.vendor-page h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+.dark .vendor-page h2 {
+  color: #fff;
+}
+
+.action-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.action-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.dark .action-card {
+  background: #2d3142;
+}
+
+.action-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.action-card i {
+  font-size: 50px;
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.action-card h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.dark .action-card h4 {
+  color: #fff;
+}
+
+.action-card p {
+  color: #6c757d;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

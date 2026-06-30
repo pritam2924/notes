@@ -1,0 +1,135 @@
+.calendar-page {
+  animation: fadeIn 0.5s ease;
+}
+
+.calendar-page h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+.dark .calendar-page h2 {
+  color: #fff;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.calendar-wrapper {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dark .calendar-wrapper {
+  background: #2d3142;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark .react-calendar {
+  background: #2d3142;
+  color: #fff;
+}
+
+.react-calendar__tile--active {
+  background: var(--gradient-2) !important;
+  color: white;
+}
+
+.events-panel {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dark .events-panel {
+  background: #2d3142;
+}
+
+.events-panel h4 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.dark .events-panel h4 {
+  color: #fff;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.dark .event-item {
+  background: #3d4152;
+}
+
+.event-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-item i {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.event-item h6 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.dark .event-item h6 {
+  color: #fff;
+}
+
+.event-item small {
+  color: #6c757d;
+}
+
+.event-item.inspection {
+  border-left-color: #28a745;
+}
+
+.event-item.meeting {
+  border-left-color: var(--primary-light);
+}
+
+.event-item.maintenance {
+  border-left-color: #ffc107;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    grid-template-columns: 1fr;
+  }
+}

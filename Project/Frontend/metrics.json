@@ -1,0 +1,159 @@
+{
+  "metrics": [
+    {
+      "id": "1",
+      "equipmentId": "EQ-MECH-2025-1001",
+      "equipmentName": "Centrifugal Pump",
+      "category": "Mechanical",
+      "recordId": "e6f9",
+      "timestamp": "2025-12-24T08:40:00000Z",
+      "metrics": {
+        "temperature": 72.5,
+        "load": 68,
+        "vibration": 1.8
+      },
+      "notes": "Normal operation. Ambient 28°C."
+    },
+    {
+      "id": "2",
+      "equipmentId": "EQ-ELEC-2025-1002",
+      "equipmentName": "Diesel Generator",
+      "category": "Electrical",
+      "recordId": "43f8",
+      "timestamp": "2025-12-24T07:15:00.000Z",
+      "metrics": {
+        "temperature": 85.2,
+        "load": 92
+      },
+      "notes": "High load during peak shift."
+    },
+    {
+      "id": "3",
+      "equipmentId": "EQ-INST-2025-1003",
+      "equipmentName": "Pressure Transmitter",
+      "category": "Instrumentation",
+      "recordId": "b5cf",
+      "timestamp": "2025-12-24T06:55:00.000Z",
+      "metrics": {
+        "temperature": 41
+      },
+      "notes": "Stable readings."
+    },
+    {
+      "id": "4",
+      "equipmentId": "EQ-AUTO-2025-1004",
+      "equipmentName": "Robotic Arm",
+      "category": "Automation",
+      "recordId": "ff8b",
+      "timestamp": "2025-12-24T08:10:00.000Z",
+      "metrics": {
+        "temperature": 63.3,
+        "load": 74
+      },
+      "notes": "Routine packaging cycle."
+    },
+    {
+      "id": "5",
+      "equipmentId": "EQ-HTCL-2025-1005",
+      "equipmentName": "Industrial Boiler",
+      "category": "Heating &amp; Cooling",
+      "recordId": "214a",
+      "timestamp": "2025-12-24T08:00:00.000Z",
+      "metrics": {
+        "temperature": 105,
+        "load": 88
+      },
+      "notes": "Operating near rated capacity."
+    },
+    {
+      "id": "6",
+      "equipmentId": "EQ-SAFE-2025-1006",
+      "equipmentName": "Fire Suppression System",
+      "category": "Safety &amp; Utilization",
+      "recordId": "cc70",
+      "timestamp": "2025-12-24T07:45:00.000Z",
+      "metrics": {
+        "temperature": 32
+      },
+      "notes": "No anomalies."
+    },
+    {
+      "id": "7",
+      "equipmentId": "EQ-MECH-2025-1007",
+      "equipmentName": "Conveyor Belt",
+      "category": "Mechanical",
+      "recordId": "e948",
+      "timestamp": "2025-12-24T08:30:00.000Z",
+      "metrics": {
+        "temperature": 58.7,
+        "load": 65,
+        "vibration": 2.6
+      },
+      "notes": "Minor vibration increase—inspect rollers next shift."
+    },
+    {
+      "id": "8",
+      "equipmentId": "EQ-ELEC-2025-1008",
+      "equipmentName": "Air Compressor",
+      "category": "Electrical",
+      "recordId": "70a0",
+      "timestamp": "2025-12-24T08:25:00.000Z",
+      "metrics": {
+        "temperature": 79.5,
+        "load": 83
+      },
+      "notes": "Pressure stable at 7 bar."
+    },
+    {
+      "id": "9",
+      "equipmentId": "EQ-INST-2025-1009",
+      "equipmentName": "Temperature Sensor",
+      "category": "Instrumentation",
+      "recordId": "f5d8",
+      "timestamp": "2025-12-24T08:20:00.000Z",
+      "metrics": {
+        "temperature": 36.4
+      },
+      "notes": "Calibration due next week."
+    },
+    {
+      "id": "10",
+      "equipmentId": "EQ-AUTO-2025-1010",
+      "equipmentName": "Automated Packaging Machine",
+      "category": "Automation",
+      "recordId": "43aa",
+      "timestamp": "2025-12-24T08:15:00.000Z",
+      "metrics": {
+        "temperature": 68.1,
+        "load": 77
+      },
+      "notes": "Cycle time within target."
+    },
+    {
+      "id": "11",
+      "equipmentId": "EQ-AUTO-2025-1011",
+      "equipmentName": "Laptop",
+      "category": "Automation",
+      "recordId": "45b8",
+      "timestamp": "2025-12-24T08:05:00.000Z",
+      "metrics": {
+        "temperature": 47.2,
+        "load": 32
+      },
+      "notes": "Running diagnostics."
+    },
+    {
+      "id": "6418",
+      "equipmentId": "EQ-MECH-2025-1001",
+      "equipmentName": "Centrifugal Pump",
+      "category": "Mechanical",
+      "recordId": "e6f9",
+      "timestamp": "2025-12-23T23:14:00.000Z",
+      "metrics": {
+        "temperature": 70,
+        "load": 60,
+        "vibration": 1.5
+      }
+    }
+  ]
+}

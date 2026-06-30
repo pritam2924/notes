@@ -1,0 +1,66 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #005f6b; /* Dark teal */
+  --primary-dark: #004851; /* Deeper teal */
+  --primary-light: #4ba3a6; /* Medium teal */
+
+  /* Secondary & Accent */
+  --secondary-color: #6fb8bc; /* Lighter teal */
+  --accent-color: #a8dadc; /* Very light teal */
+
+  /* Status Colors */
+  --error-color: #d9534f; /* Red for errors */
+  --success-color: #10b981; /* Green for success */
+
+  /* Background & Text */
+  --light-bg: #fafafa;
+  --light-secondary: #f8fafc;
+  --light-accent: #f1f5f9;
+  --dark-text: #1e293b;
+  --gray-text: #64748b;
+  --border-color: #e2e8f0;
+
+  /* Gradients */
+  --gradient-1: linear-gradient(135deg, #004851 0%, #4ba3a6 100%);
+  --gradient-2: linear-gradient(135deg, #005f6b 0%, #6fb8bc 100%);
+  --gradient-3: linear-gradient(135deg, #4ba3a6 0%, #a8dadc 100%);
+
+  /* Font */
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Form Control */
+  --form-control-focus-border-color: #1e293b;
+}
+
+/* Form control focus & invalid states - ensures dark border on focus and red when invalid */
+.form-control:focus {
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 0.15rem rgba(0, 72, 81, 0.12);
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+  box-shadow: none;
+}
+
+.form-control.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.12);
+}
+
+* {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  background: var(--light-bg);
+  color: var(--dark-text);
+}
+/* Add this to a global or utility CSS file */
+/* .page-content-clearance {
+  padding-top: 0px;
+} */

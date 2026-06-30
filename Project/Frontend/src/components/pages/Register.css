@@ -1,0 +1,220 @@
+/* Register.css - Contains common form styles and validation specific styles */
+
+/* Auth Form General Layout (Common) */
+.auth-form {
+    width: 100%;
+    animation: slideDown 0.5s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  .slide-down {
+    animation: slideDown 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      max-height: 1000px;
+    }
+  }
+
+  .auth-card-subtitle-expanded {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Form Elements (Common) */
+  .form-label {
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    outline: none;
+  }
+  
+  /* Submit Button (Common) */
+  .auth-submit-btn {
+    background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+    border: none;
+    padding: 0.85rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    margin-top: 1rem;
+  }
+  
+  .auth-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(37, 99, 235, 0.5);
+  }
+  
+  /* Switch Link (Common) */
+  .switch-text {
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+  
+  .btn-link-custom {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    padding: 0;
+  }
+  
+  .btn-link-custom:hover {
+    color: #1e40af;
+    text-decoration: underline;
+  }
+
+/* --- REGISTER SPECIFIC STYLES --- */
+
+/* Validation Feedback (Minimal Bootstrap equivalent) */
+.form-control.is-invalid {
+    border-color: #dc3545; /* Red border */
+    padding-right: 2.25rem;
+    /* Added minimal SVG background image for visual feedback */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linecap='round' d='M6 3.5v5M3.5 6h5'/%3e%3c/svg%3e"); 
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+.invalid-feedback.d-block {
+    display: block !important;
+}
+
+/* Email/OTP Input Group */
+.input-group {
+    display: flex;
+    width: 100%;
+}
+
+.input-group .form-control {
+    flex-grow: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group .btn-outline-primary {
+    background: none;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    padding: 0.75rem 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.input-group .btn-outline-primary:hover:not(:disabled) {
+    background-color: #2563eb;
+    color: white;
+}
+
+.input-group .btn-outline-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* container for first + last name inputs */
+.register-card .name-row {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 0.75rem;
+}
+
+/* make the inputs share available space and override any previous width */
+.register-card .name-row .form-control {
+  flex: 1 1 0;
+  width: auto !important;
+  box-sizing: border-box;
+}
+
+/* consistent button width for Send OTP / Verify / Generate / etc. */
+.register-card .auth-equal-btn {
+  width: 180px;              /* exact width you want; change as needed */
+  min-width: 140px;
+  max-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border: 2px solid #2563eb;
+  background: #fff;
+  color: #2563eb;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.08s;
+}
+
+.register-card .auth-equal-btn:hover:not(:disabled) {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.register-card .auth-equal-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: transparent;
+  color: #9ca3af;
+  border-color: #9ca3af;
+}
+
+/* If buttons are stacked, ensure consistent alignment */
+.register-card .btn-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Keep form layout-responsive */
+@media (max-width: 576px) {
+  .register-card .name-row {
+    flex-direction: column;
+  }
+  .register-card .auth-equal-btn {
+    width: 100%;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,352 @@
+.equipment-search-container {
+  padding: 5rem 0;
+  min-height: 100vh;
+  background: var(--light-secondary);
+}
+
+.equipment-search-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-2);
+  margin: 0 auto 3rem;
+  border-radius: 2px;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+  outline: none;
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+  outline: none;
+}
+
+.results-count {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-text);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid var(--border-color);
+}
+
+.equipment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.equipment-table thead {
+  background: var(--gradient-2);
+  color: white;
+}
+
+.equipment-table th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.equipment-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.equipment-table tbody tr:hover {
+  background: var(--light-accent);
+  transform: scale(1.01);
+}
+
+.equipment-table td {
+  padding: 1rem 1.5rem;
+  color: var(--dark-text);
+  font-size: 0.95rem;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.status.operational {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.installed {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.under {
+  background: #ffeaa7;
+  color: #d63031;
+}
+
+.status.decommissioned {
+  background: #dfe6e9;
+  color: #2d3436;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: var(--gray-text);
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 650px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: var(--light-accent);
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--gray-text);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: rotate(90deg);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: var(--dark-text);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--light-secondary);
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.detail-section:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+}
+
+.detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.detail-section p {
+  margin: 0.75rem 0;
+  color: var(--gray-text);
+  line-height: 1.6;
+}
+
+.detail-section p strong {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--border-color);
+  background: white;
+  color: var(--dark-text);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  min-width: 45px;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.pagination-btn.active {
+  background: var(--gradient-2);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .equipment-search-container {
+    padding: 3rem 0;
+  }
+
+  .equipment-search-container h2 {
+    font-size: 2rem;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    min-width: 100%;
+  }
+  
+  .equipment-table {
+    font-size: 0.85rem;
+  }
+  
+  .equipment-table th,
+  .equipment-table td {
+    padding: 0.75rem;
+  }
+
+  .modal-content {
+    padding: 2rem;
+    width: 95%;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .pagination-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    min-width: 40px;
+  }
+}

@@ -1,0 +1,220 @@
+/* ===== Sidebar Container ===== */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: var(--gradient-2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Scrollbar (WebKit) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+/* ===== Header ===== */
+.sidebar-header {
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.sidebar-header i {
+  font-size: 28px;
+}
+
+.sidebar-header h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== Navigation ===== */
+.sidebar-nav {
+  padding: 20px 0;
+}
+
+/* Each nav link and the dropdown toggle share the same visual style */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+  cursor: pointer;
+  position: relative;
+  border: none; /* in case it's a button */
+  background: transparent; /* in case it's a button */
+  width: 100%; /* make button fill the row */
+  text-align: left; /* keep text left-aligned */
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.nav-item.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-left: 4px solid #fff;
+  padding-left: 16px; /* compensate for border-left so text aligns */
+}
+
+.nav-item i {
+  font-size: 20px;
+  min-width: 20px;
+}
+
+/* Keyboard focus for accessibility */
+.nav-item:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ===== Dropdown ===== */
+.nav-dropdown {
+  position: relative; /* anchor for the absolute submenu */
+}
+
+/* Chevron icon on the parent row */
+.nav-dropdown .dropdown-icon {
+  margin-left: auto;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Toggle button specifics (inherits .nav-item styles above) */
+
+/* Submenu container */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 220px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 6px 0;
+  z-index: 10;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  backdrop-filter: saturate(1.2) blur(2px);
+  animation: dropdownFadeIn 150ms ease-out;
+}
+
+/* Flyout behavior when sidebar is collapsed: open to the right */
+.sidebar.collapsed .dropdown-menu {
+  left: 100%;
+  top: 0;
+}
+
+/* Submenu items */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px 12px 50px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.dropdown-item.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dropdown-item i {
+  font-size: 16px;
+}
+
+/* ===== Collapsed-mode text hints (optional) ===== */
+/* If you want tooltips on collapsed items, you can use title attributes in JSX */
+/* or implement a tooltip system here */
+
+/* ===== Animations ===== */
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 260px;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .sidebar.collapsed {
+    transform: translateX(-100%);
+    width: 260px;
+  }
+
+  .sidebar.collapsed.mobile-open {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar.mobile-open {
+    width: 100%;
+  }
+}

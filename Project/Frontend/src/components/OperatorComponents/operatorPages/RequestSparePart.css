@@ -1,0 +1,121 @@
+.request-spare-part {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  max-width: 760px;
+  margin: 12px auto;
+}
+
+.request-spare-part h4 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.request-form .field-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.request-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.request-form select,
+.request-form input,
+.request-form textarea {
+  padding: 8px 10px;
+  border: 1px solid #e0e6ef;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.request-form textarea { min-height: 80px; }
+
+.form-actions { display: flex; justify-content: flex-end; margin-top: 12px; }
+
+.btn-primary {
+  background: #17a2b8;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.error { color: #e74c3c; margin-bottom: 8px; }
+
+/* New improved styles */
+.request-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(20,40,80,0.06);
+}
+
+.request-header h4 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+}
+.request-header .muted {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Title outside the form */
+/* request-title removed in favor of Bootstrap utility classes used in markup */
+
+.row.two-col {
+  display: flex;
+  gap: 16px;
+}
+.row.two-col .field-row {
+  flex: 1;
+}
+
+.spare-preview {
+  background: #f8fafc;
+  border: 1px solid #eef2f7;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+.spare-name { font-weight: 700; color: #1f2937; margin-bottom: 4px; }
+.spare-meta { color: #6b7280; font-size: 13px; }
+
+.btn-primary {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.btn-primary:hover:not(:disabled) {
+  background: #138496;
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 720px) {
+  .row.two-col { flex-direction: column; }
+  .request-spare-part { padding: 12px; }
+}
+
+/* Hide number input spinner controls so users type quantity manually */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,378 @@
+.admin-navbar {
+  height: 70px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.dark .admin-navbar {
+  background: #2d3142;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 8px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.dark .menu-toggle {
+  color: #fff;
+}
+
+.menu-toggle:hover {
+  background: #f0f0f0;
+}
+
+.dark .menu-toggle:hover {
+  background: #3d4152;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-icon-wrapper {
+  position: relative;
+}
+
+.nav-icon {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dark .nav-icon {
+  color: #fff;
+}
+
+.nav-icon:hover {
+  background: #f0f0f0;
+}
+
+.dark .nav-icon:hover {
+  background: #3d4152;
+}
+
+.nav-icon .badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #dc3545;
+  color: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-panel {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.dark .dropdown-panel {
+  background: #2d3142;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-panel h6 {
+  padding: 15px 20px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+
+.dark .dropdown-panel h6 {
+  border-bottom: 1px solid #3d4152;
+}
+
+.notification-item,
+.message-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark .notification-item,
+.dark .message-item {
+  border-bottom: 1px solid #3d4152;
+}
+
+.notification-item:hover,
+.message-item:hover {
+  background: #f8f9fa;
+}
+
+.dark .notification-item:hover,
+.dark .message-item:hover {
+  background: #3d4152;
+}
+
+.notification-item p,
+.message-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.notification-item small,
+.message-item small {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.message-item strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.user-profile {
+  font-size: 26px;
+  color: var(--primary-dark);
+  text-decoration: none;
+  padding: 0;
+}
+
+.user-profile:hover {
+  color: var(--primary-light);
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  background: white;
+}
+
+.dark .dropdown-menu {
+  background: #2d3142;
+  color: #fff;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+
+.dark .dropdown-item {
+  color: #fff;
+}
+
+.dark .dropdown-item:hover {
+  background: #3d4152;
+}
+
+.dropdown-item i {
+  font-size: 16px;
+}
+
+/* User Profile Info Styles */
+.user-profile-info {
+  text-align: left;
+  width: 100%;
+}
+
+.user-profile-info strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--primary-dark);
+}
+
+.user-details {
+  font-size: 12px;
+  color: #495057;
+}
+
+.user-details div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  gap: 6px;
+  color: #495057;
+}
+
+.user-details i {
+  font-size: 12px;
+  width: 14px;
+  color: var(--primary-dark);
+}
+
+.dark .user-details {
+  color: #e9ecef;
+}
+
+.dark .user-details div {
+  color: #e9ecef;
+}
+
+.dark .user-profile-info strong {
+  color: #fff;
+}
+
+/* Ensure operator navbar has same base styles as admin navbar (if needed) */
+.operator-navbar {
+  height: 70px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.dark .operator-navbar {
+  background: #2d3142;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stronger specificity to override sidebar.css for operator dropdown items */
+.operator-navbar .dropdown-menu .dropdown-item,
+.operator-navbar .dropdown-menu .dropdown-item i {
+  color: #000 !important;
+  background-color: transparent !important;
+  font-weight: 400 !important;
+}
+
+/* Keep black and bold on hover/focus/active */
+.operator-navbar .dropdown-menu .dropdown-item:hover,
+.operator-navbar .dropdown-menu .dropdown-item:focus,
+.operator-navbar .dropdown-menu .dropdown-item:active {
+  color: #000 !important;
+  background-color: transparent !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* Make icons inherit the text color */
+.operator-navbar .dropdown-menu .dropdown-item .bi {
+  color: inherit !important;
+}
+
+/* If you also want to keep admin behavior consistent, include admin selectors too */
+.admin-navbar .dropdown-menu .dropdown-item,
+.admin-navbar .dropdown-menu .dropdown-item i {
+  color: #000 !important;
+  background-color: transparent !important;
+  font-weight: 400 !important;
+}
+
+.admin-navbar .dropdown-menu .dropdown-item:hover,
+.admin-navbar .dropdown-menu .dropdown-item:focus,
+.admin-navbar .dropdown-menu .dropdown-item:active {
+  color: #000 !important;
+  background-color: transparent !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* Restore logout red for operator and admin dropdowns */
+.operator-navbar .dropdown-menu .dropdown-item.text-danger,
+.admin-navbar .dropdown-menu .dropdown-item.text-danger {
+  color: #dc3545 !important; /* bootstrap danger */
+  background-color: transparent !important;
+}
+
+/* Keep icon color in sync */
+.operator-navbar .dropdown-menu .dropdown-item.text-danger .bi,
+.admin-navbar .dropdown-menu .dropdown-item.text-danger .bi {
+  color: inherit !important;
+}
+
+/* Hover/focus: keep red, become bold (no white background) */
+.operator-navbar .dropdown-menu .dropdown-item.text-danger:hover,
+.operator-navbar .dropdown-menu .dropdown-item.text-danger:focus,
+.admin-navbar .dropdown-menu .dropdown-item.text-danger:hover,
+.admin-navbar .dropdown-menu .dropdown-item.text-danger:focus {
+  color: #c82333 !important; /* slightly darker on hover */
+  background-color: transparent !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-navbar {
+    padding: 0 15px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .nav-icon {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .dropdown-panel {
+    width: 280px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-right {
+    gap: 8px;
+  }
+
+  .nav-icon {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .user-profile {
+    font-size: 22px;
+  }
+
+  .dropdown-panel {
+    width: calc(100vw - 20px);
+    right: -5px;
+  }
+}

@@ -1,0 +1,71 @@
+/* Downtime heading styling */
+.downtime-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0b1415;
+  margin-bottom: 1rem;
+}
+
+/* Button container styling */
+.d-flex.justify-content-center.mt-3 {
+  gap: 1rem;
+}
+
+/* Button styling for equal width */
+.btn.flex-fill {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Align labels left but keep the colon aligned vertically in a column */
+
+.report-details {
+  display: grid;
+  grid-template-columns: 220px 1fr; /* fixed first column width ensures colon column alignment */
+  gap: 6px 12px;
+  font-family: monospace;
+  align-items: start;
+  color: #111827;
+}
+
+/* Label placed on the left; colon rendered with ::after and positioned at the right edge
+   so all colons line up vertically while label text remains left-aligned. */
+.report-details .label {
+  position: relative;
+  text-align: left;       /* label text left-aligned */
+  padding-right: 18px;    /* space for the visually-positioned colon */
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.report-details .label::after {
+  content: ":";           /* the aligned colon */
+  position: absolute;
+  right: 6px;             /* distance from the right edge of the label cell */
+  top: 0;
+  color: inherit;
+}
+
+/* Values remain left-aligned in the second column */
+.report-details .value {
+  text-align: left;
+  word-break: break-word;
+  color: #374151;
+}
+
+/* Responsive: on narrow screens stack label/value and render colon inline */
+@media (max-width: 576px) {
+  .report-details {
+    grid-template-columns: 1fr;
+  }
+  .report-details .label {
+    padding-right: 0;
+  }
+  .report-details .label::after {
+    position: static;
+    margin-left: 6px;
+  }
+}

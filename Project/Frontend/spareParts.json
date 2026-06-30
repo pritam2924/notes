@@ -1,0 +1,418 @@
+{
+  "spareParts": [
+    {
+      "equipmentId": "EQ-MECH-2025-1001",
+      "equipmentName": "Centrifugal Pump",
+      "parts": [
+        {
+          "id": "SP-1001-001",
+          "name": "Impeller",
+          "partNumber": "IMP-CP500-001",
+          "quantity": 8,
+          "status": "Available",
+          "lastUpdated": "2024-01-15",
+          "description": "Main impeller for centrifugal pump"
+        },
+        {
+          "id": "SP-1001-002",
+          "name": "Mechanical Seal",
+          "partNumber": "MS-CP500-002",
+          "quantity": 2,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-10",
+          "description": "Mechanical seal assembly"
+        },
+        {
+          "id": "SP-1001-003",
+          "name": "Bearing Set",
+          "partNumber": "BR-CP500-003",
+          "quantity": 8,
+          "status": "Available",
+          "lastUpdated": "2024-01-12",
+          "description": "Ball bearing set for pump shaft"
+        },
+        {
+          "id": "SP-1001-004",
+          "name": "Pump Casing",
+          "partNumber": "CS-CP500-004",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-08",
+          "description": "Main pump casing"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-ELEC-2025-1002",
+      "equipmentName": "Diesel Generator",
+      "parts": [
+        {
+          "id": "SP-1002-001",
+          "name": "Alternator",
+          "partNumber": "ALT-DG750-001",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-14",
+          "description": "Main alternator assembly"
+        },
+        {
+          "id": "SP-1002-002",
+          "name": "Fuel Filter",
+          "partNumber": "FF-DG750-002",
+          "quantity": 8,
+          "status": "Available",
+          "lastUpdated": "2024-01-09",
+          "description": "Diesel fuel filter element"
+        },
+        {
+          "id": "SP-1002-003",
+          "name": "Oil Filter",
+          "partNumber": "OF-DG750-003",
+          "quantity": 3,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-11",
+          "description": "Engine oil filter"
+        },
+        {
+          "id": "SP-1002-004",
+          "name": "Battery",
+          "partNumber": "BAT-DG750-004",
+          "quantity": 7,
+          "status": "Available",
+          "lastUpdated": "2024-01-13",
+          "description": "Starting battery"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-INST-2025-1003",
+      "equipmentName": "Pressure Transmitter",
+      "parts": [
+        {
+          "id": "SP-1003-001",
+          "name": "Sensor Element",
+          "partNumber": "SE-PT300-001",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-12",
+          "description": "Pressure sensor element"
+        },
+        {
+          "id": "SP-1003-002",
+          "name": "Display Module",
+          "partNumber": "DM-PT300-002",
+          "quantity": 3,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-10",
+          "description": "Digital display module"
+        },
+        {
+          "id": "SP-1003-003",
+          "name": "Cable Assembly",
+          "partNumber": "CA-PT300-003",
+          "quantity": 12,
+          "status": "Available",
+          "lastUpdated": "2024-01-09",
+          "description": "Signal cable assembly"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-AUTO-2025-1004",
+      "equipmentName": "Robotic Arm",
+      "parts": [
+        {
+          "id": "SP-1004-001",
+          "name": "Servo Motor",
+          "partNumber": "SM-RA200-001",
+          "quantity": 7,
+          "status": "Available",
+          "lastUpdated": "2024-01-11",
+          "description": "High-torque servo motor"
+        },
+        {
+          "id": "SP-1004-002",
+          "name": "Controller Board",
+          "partNumber": "CB-RA200-002",
+          "quantity": 0,
+          "status": "Out of Stock",
+          "lastUpdated": "2024-01-08",
+          "description": "Main controller board"
+        },
+        {
+          "id": "SP-1004-003",
+          "name": "Gripper Assembly",
+          "partNumber": "GA-RA200-003",
+          "quantity": 5,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-06",
+          "description": "End-effector gripper"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-HTCL-2025-1005",
+      "equipmentName": "Industrial Boiler",
+      "parts": [
+        {
+          "id": "SP-1005-001",
+          "name": "Burner Assembly",
+          "partNumber": "BA-IB100-001",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-12",
+          "description": "Gas burner assembly"
+        },
+        {
+          "id": "SP-1005-002",
+          "name": "Pressure Relief Valve",
+          "partNumber": "PRV-IB100-002",
+          "quantity": 5,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-10",
+          "description": "Safety pressure relief valve"
+        },
+        {
+          "id": "SP-1005-003",
+          "name": "Heat Exchanger",
+          "partNumber": "HE-IB100-003",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-09",
+          "description": "Primary heat exchanger"
+        },
+        {
+          "id": "SP-1005-004",
+          "name": "Control Panel",
+          "partNumber": "CP-IB100-004",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-11",
+          "description": "Boiler control panel"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-SAFE-2025-1006",
+      "equipmentName": "Fire Suppression System",
+      "parts": [
+        {
+          "id": "SP-1006-001",
+          "name": "Sprinkler Head",
+          "partNumber": "SH-FSS50-001",
+          "quantity": 20,
+          "status": "Available",
+          "lastUpdated": "2024-01-13",
+          "description": "Automatic sprinkler head"
+        },
+        {
+          "id": "SP-1006-002",
+          "name": "Control Valve",
+          "partNumber": "CV-FSS50-002",
+          "quantity": 7,
+          "status": "Available",
+          "lastUpdated": "2024-01-07",
+          "description": "Zone control valve"
+        },
+        {
+          "id": "SP-1006-003",
+          "name": "Pressure Switch",
+          "partNumber": "PS-FSS50-003",
+          "quantity": 5,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-06",
+          "description": "System pressure switch"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-MECH-2025-1007",
+      "equipmentName": "Conveyor Belt",
+      "parts": [
+        {
+          "id": "SP-1007-001",
+          "name": "Drive Motor",
+          "partNumber": "DM-CB300-001",
+          "quantity": 7,
+          "status": "Available",
+          "lastUpdated": "2024-01-12",
+          "description": "Conveyor drive motor"
+        },
+        {
+          "id": "SP-1007-002",
+          "name": "Belt Segment",
+          "partNumber": "BS-CB300-002",
+          "quantity": 8,
+          "status": "Available",
+          "lastUpdated": "2024-01-10",
+          "description": "Replacement belt segment"
+        },
+        {
+          "id": "SP-1007-003",
+          "name": "Roller Bearing",
+          "partNumber": "RB-CB300-003",
+          "quantity": 4,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-09",
+          "description": "Conveyor roller bearing"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-ELEC-2025-1008",
+      "equipmentName": "Air Compressor",
+      "parts": [
+        {
+          "id": "SP-1008-001",
+          "name": "Air Filter",
+          "partNumber": "AF-AC150-001",
+          "quantity": 8,
+          "status": "Available",
+          "lastUpdated": "2024-01-11",
+          "description": "Intake air filter"
+        },
+        {
+          "id": "SP-1008-002",
+          "name": "Piston Ring Set",
+          "partNumber": "PRS-AC150-002",
+          "quantity": 0,
+          "status": "Out of Stock",
+          "lastUpdated": "2024-01-08",
+          "description": "Compressor piston rings"
+        },
+        {
+          "id": "SP-1008-003",
+          "name": "Pressure Gauge",
+          "partNumber": "PG-AC150-003",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-06",
+          "description": "System pressure gauge"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-INST-2025-1009",
+      "equipmentName": "Temperature Sensor",
+      "parts": [
+        {
+          "id": "SP-1009-001",
+          "name": "Thermocouple",
+          "partNumber": "TC-TS80-001",
+          "quantity": 10,
+          "status": "Available",
+          "lastUpdated": "2024-01-10",
+          "description": "Type K thermocouple"
+        },
+        {
+          "id": "SP-1009-002",
+          "name": "Signal Amplifier",
+          "partNumber": "SA-TS80-002",
+          "quantity": 2,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-09",
+          "description": "Temperature signal amplifier"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-AUTO-2025-1010",
+      "equipmentName": "Automated Packaging Machine",
+      "parts": [
+        {
+          "id": "SP-1010-001",
+          "name": "Conveyor Motor",
+          "partNumber": "CM-APM400-001",
+          "quantity": 7,
+          "status": "Available",
+          "lastUpdated": "2024-01-11",
+          "description": "Packaging conveyor motor"
+        },
+        {
+          "id": "SP-1010-002",
+          "name": "Sealing Element",
+          "partNumber": "SE-APM400-002",
+          "quantity": 11,
+          "status": "Available",
+          "lastUpdated": "2024-01-08",
+          "description": "Heat sealing element"
+        },
+        {
+          "id": "SP-1010-003",
+          "name": "PLC Module",
+          "partNumber": "PLC-APM400-003",
+          "quantity": 0,
+          "status": "Out of Stock",
+          "lastUpdated": "2024-01-07",
+          "description": "Programmable logic controller"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-AUTO-2025-1011",
+      "equipmentName": "Laptop",
+      "parts": [
+        {
+          "id": "SP-1011-001",
+          "name": "Power Adapter",
+          "partNumber": "PA-DELL-001",
+          "quantity": 5,
+          "status": "Available",
+          "lastUpdated": "2024-01-12",
+          "description": "65W power adapter"
+        },
+        {
+          "id": "SP-1011-002",
+          "name": "RAM Module",
+          "partNumber": "RAM-DELL-002",
+          "quantity": 3,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-10",
+          "description": "8GB DDR4 RAM module"
+        },
+        {
+          "id": "SP-1011-003",
+          "name": "Hard Drive",
+          "partNumber": "HD-DELL-003",
+          "quantity": 2,
+          "status": "Available",
+          "lastUpdated": "2024-01-09",
+          "description": "500GB SSD drive"
+        }
+      ]
+    },
+    {
+      "equipmentId": "EQ-HTCL-2025-1006",
+      "equipmentName": "Gas railing",
+      "parts": [
+        {
+          "id": "SP-1006-001",
+          "name": "Gas Valve",
+          "partNumber": "GV-HASTER-001",
+          "quantity": 6,
+          "status": "Available",
+          "lastUpdated": "2024-01-13",
+          "description": "Main gas control valve"
+        },
+        {
+          "id": "SP-1006-002",
+          "name": "Pressure Regulator",
+          "partNumber": "PR-HASTER-002",
+          "quantity": 4,
+          "status": "Low Stock",
+          "lastUpdated": "2024-01-11",
+          "description": "Gas pressure regulator"
+        },
+        {
+          "id": "SP-1006-003",
+          "name": "Burner Nozzle",
+          "partNumber": "BN-HASTER-003",
+          "quantity": 8,
+          "status": "Available",
+          "lastUpdated": "2024-01-08",
+          "description": "Gas burner nozzle"
+        }
+      ]
+    }
+  ]
+}
