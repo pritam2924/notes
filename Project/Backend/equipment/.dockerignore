@@ -1,0 +1,7 @@
+target/
+*.jar
+*.log
+.git
+.gitignore
+docker-compose.yml
+.DS_Store
